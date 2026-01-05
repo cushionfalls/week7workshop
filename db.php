@@ -1,9 +1,8 @@
-<?php 
-
+<?php
 $server = 'localhost';
 $username = 'root';
 $password = '';
-$database = 'hearald_db';
+$database = 'herald_db';
 
 try {
     $options = [
@@ -19,10 +18,7 @@ try {
         $options
     );
 
-    echo "<h3 style='color:green;'>Welcome to Student Database!</h3>";
-
 } catch (PDOException $e) {
     die("Connection Failed: " . $e->getMessage());
 }
-
 ?>
